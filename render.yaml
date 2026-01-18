@@ -1,0 +1,59 @@
+# Render Blueprint - Deploys all 4 microservices
+# See: https://render.com/docs/blueprint-spec
+
+services:
+  # Process 1: Logs Service (a)
+  - type: web
+    name: logs-service
+    runtime: node
+    buildCommand: npm install
+    startCommand: node logs-service/index.js
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: NODE_ENV
+        value: production
+
+  # Process 2: Users Service (b)
+  - type: web
+    name: users-service
+    runtime: node
+    buildCommand: npm install
+    startCommand: node users-service/index.js
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: NODE_ENV
+        value: production
+
+  # Process 3: Costs Service (c)
+  - type: web
+    name: costs-service
+    runtime: node
+    buildCommand: npm install
+    startCommand: node costs-service/index.js
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: NODE_ENV
+        value: production
+
+  # Process 4: Admin Service (d)
+  - type: web
+    name: admin-service
+    runtime: node
+    buildCommand: npm install
+    startCommand: node admin-service/index.js
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: DEVELOPER_1_FIRST_NAME
+        value: Daniel
+      - key: DEVELOPER_1_LAST_NAME
+        value: Ziv
+      - key: DEVELOPER_2_FIRST_NAME
+        value: Taisiya
+      - key: DEVELOPER_2_LAST_NAME
+        value: Angel
+      - key: NODE_ENV
+        value: production
