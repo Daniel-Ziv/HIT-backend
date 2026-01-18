@@ -19,6 +19,17 @@
 
 ---
 
+## Deployed URLs
+
+| Process | Service | URL |
+|---------|---------|-----|
+| a (Logs) | logs-service | https://hit-backend-l3ks.onrender.com |
+| b (Users) | users-service | https://hit-backend-users-service.onrender.com |
+| c (Costs) | costs-service | https://costs-service-iqwd.onrender.com |
+| d (Admin) | admin-service | https://admin-service-x30k.onrender.com |
+
+---
+
 ## Collaborative Tools Summary
 
 We used Discord as our primary communication platform, creating dedicated channels for discussing implementation details, sharing code snippets, and troubleshooting issues together. This allowed us to stay connected and coordinate our work efficiently. Additionally, we held regular in-person coding sessions where we worked side by side, enabling real-time collaboration, pair programming, and immediate feedback on code changes. This combination of remote communication and face-to-face collaboration significantly improved our workflow and helped us complete the project successfully.
