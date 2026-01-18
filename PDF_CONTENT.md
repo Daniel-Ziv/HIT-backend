@@ -704,7 +704,7 @@ const { createLogger, requestLoggerMiddleware } = require("../shared/logger");
 
 // Initialize Express application
 const app = express();
-const PORT = process.env.LOGS_PORT || 3001;
+const PORT = process.env.PORT || process.env.LOGS_PORT || 3001;
 const SERVICE_NAME = "logs-service";
 
 // Create logger for this service
@@ -797,7 +797,7 @@ const { createLogger, requestLoggerMiddleware } = require("../shared/logger");
 
 // Initialize Express application
 const app = express();
-const PORT = process.env.USERS_PORT || 3002;
+const PORT = process.env.PORT || process.env.USERS_PORT || 3002;
 const SERVICE_NAME = "users-service";
 
 // Create logger for this service
@@ -1060,7 +1060,7 @@ const { createLogger, requestLoggerMiddleware } = require("../shared/logger");
 
 // Initialize Express application
 const app = express();
-const PORT = process.env.COSTS_PORT || 3003;
+const PORT = process.env.PORT || process.env.COSTS_PORT || 3003;
 const SERVICE_NAME = "costs-service";
 
 // Valid cost categories as specified in requirements
@@ -1519,7 +1519,7 @@ const { createLogger, requestLoggerMiddleware } = require("../shared/logger");
 
 // Initialize Express application
 const app = express();
-const PORT = process.env.ADMIN_PORT || 3004;
+const PORT = process.env.PORT || process.env.ADMIN_PORT || 3004;
 const SERVICE_NAME = "admin-service";
 
 // Create logger for this service
@@ -1542,8 +1542,8 @@ const DEVELOPERS = [
     last_name: process.env.DEVELOPER_1_LAST_NAME || "Ziv",
   },
   {
-    first_name: process.env.DEVELOPER_2_FIRST_NAME || "Team",
-    last_name: process.env.DEVELOPER_2_LAST_NAME || "Member",
+    first_name: process.env.DEVELOPER_2_FIRST_NAME || "Taisiya",
+    last_name: process.env.DEVELOPER_2_LAST_NAME || "Angel",
   },
 ];
 
@@ -2374,8 +2374,8 @@ const DEVELOPERS = [
     last_name: process.env.DEVELOPER_1_LAST_NAME || "Ziv",
   },
   {
-    first_name: process.env.DEVELOPER_2_FIRST_NAME || "Team",
-    last_name: process.env.DEVELOPER_2_LAST_NAME || "Member",
+    first_name: process.env.DEVELOPER_2_FIRST_NAME || "Taisiya",
+    last_name: process.env.DEVELOPER_2_LAST_NAME || "Angel",
   },
 ];
 

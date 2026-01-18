@@ -40,8 +40,8 @@ const DEVELOPERS = [
         last_name: process.env.DEVELOPER_1_LAST_NAME || 'Ziv'
     },
     {
-        first_name: process.env.DEVELOPER_2_FIRST_NAME || 'Team',
-        last_name: process.env.DEVELOPER_2_LAST_NAME || 'Member'
+        first_name: process.env.DEVELOPER_2_FIRST_NAME || 'Taisiya',
+        last_name: process.env.DEVELOPER_2_LAST_NAME || 'Angel'
     }
 ];
 
